@@ -36,9 +36,9 @@ void JNICALL Java_com_example_matthew_myapplication_MainActivity_renderFrame(JNI
 
     auto paint = new SkPaint();
 
-    canvas->drawText("SkiaSharp", 9, 100, 100, *paint);
+    //canvas->drawText("SkiaSharp", 9, 100, 100, *paint);
 
-    //canvas->drawRect(SkRect::MakeXYWH(20, 20, 200, 200), *paint);
+    canvas->drawRect(SkRect::MakeXYWH(20, 20, 200, 200), *paint);
 
     canvas->flush();
     context->flush();
